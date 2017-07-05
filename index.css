@@ -56,10 +56,6 @@ a{
      justify-content: space-between;
 }
 
-.mainMenu{
-  display:none;
-}
-
 #courses{
   display: none;
 }
@@ -97,4 +93,40 @@ a{
     .hide-when-small{
         display: none;
     }
+
+    .mainMenu{
+      display:none;
+    }
+}
+
+@media(min-width: 720px){
+  .nav-bar{
+      width: 100%;
+  }
+
+  .nav-logo{
+      height: 42px;
+      padding-top: 10px;
+  }
+
+  .hide-when-large{
+    display: none;
+  }
+
+  .mainMenu{
+
+  }
+
+  .show-always{
+       border-bottom: 1px solid #eeeeef;
+  }
+
+  .top-nav{
+    display: flex;
+  }
+
+  .headings{
+    display: inline-block;
+  }
+
 }
