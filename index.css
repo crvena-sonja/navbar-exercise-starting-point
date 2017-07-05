@@ -27,18 +27,28 @@ body {
 
 ul{
     list-style: none;
+    margin:0;
+    padding:0;
 }
 
 a {
     text-decoration: none;
+    color:  #6799ff;
 }
 
 .headings {
-    color:  #6799ff;
+    
+    border-bottom:1px solid #eeeeef;
+    /*border-top: 1px solid #eeeeef;*/
 }
 
 .sub-headings {
     color: black;
+    text-indent: none;
+}
+
+.show-always{
+     border-bottom: 1px solid #eeeeef;
 }
 
 /* Add your CSS here */
@@ -50,7 +60,7 @@ a {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        border-bottom: 1px solid #eeeeef;
+       
     }
 
     .nav-logo{
