@@ -31,7 +31,7 @@ ul{
     padding:0;
 }
 
-a{
+a {
     text-decoration: none;
     color:  #6799ff;
 }
@@ -40,20 +40,10 @@ a{
      color: black;
 }
 
-.headings {
-    border-bottom:1px solid #eeeeef;
-    /*border-top: 1px solid #eeeeef;*/
-}
-
 .sub-headings {
-    text-indent: none;
-    background-color: #f9fbff;
-}
-
-.show-always{
-     border-bottom: 1px solid #eeeeef;
-     display: flex;
-     justify-content: space-between;
+        display: block;
+        text-indent: none;
+        background-color: #f9fbff;
 }
 
 #courses{
@@ -85,6 +75,16 @@ a{
 
     }
 
+    .sub-headings {
+        display: block;
+        text-indent: none;
+        background-color: #f9fbff;
+    }
+
+    .headings {
+    border-bottom:1px solid #eeeeef;
+    /*border-top: 1px solid #eeeeef;*/
+}
     .top-nav{
         width: 100%;
         /*vertical-align: center;*/
@@ -92,6 +92,12 @@ a{
 
     .hide-when-small{
         display: none;
+    }
+
+    .show-always{
+     border-bottom: 1px solid #eeeeef;
+     display: flex;
+     justify-content: space-between;
     }
 
     .mainMenu{
@@ -106,7 +112,8 @@ a{
 
   .nav-logo{
       height: 42px;
-      padding-top: 10px;
+      padding-top: 15px;
+      margin-left: 15px;
   }
 
   .hide-when-large{
@@ -114,12 +121,67 @@ a{
   }
 
   .mainMenu{
-
+    display: flex;
+    flex: 2;
+    height: 42px;
+    padding-top: 25px;
+    /*border-bottom: 1px solid #eeeeef;*/
   }
 
   .show-always{
-       border-bottom: 1px solid #eeeeef;
+    /*border-bottom: 1px solid #eeeeef;*/
+    flex: 1;
   }
+
+  .courses-dropdown{
+    /* Show dropdowns when not on mobile devices */
+        display: initial;
+        /* Dropdowns are always positioned below the fixed-height menu. */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid #eeeeef;
+        padding: 40px;
+  }
+
+  .how-it-works-dropdown{
+     display: initial;
+        /* Dropdowns are always positioned below the fixed-height menu. */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid #eeeeef;
+        padding: 40px;
+}
+
+    .sub-headings {
+        text-align: center;
+        /* Don't let the items/images in the dropdown get too wide */
+        max-width: 200px;
+    }
+
+    .sub-headings img {
+        width: 74px;
+        display: inline;
+    }
+
+    .sub-headings {
+        border: 0;
+        padding: 8px 0;
+    }
+
+    .sub-headings > a {
+        /* Fix the line-height so the link text lines up with the logo */
+        line-height: 30px;
+    }
+
+    .sub-headings{
+      display: inline-block;
+    }
+
+
 
   .top-nav{
     display: flex;
@@ -127,6 +189,14 @@ a{
 
   .headings{
     display: inline-block;
+  }
+
+  .headings > a{
+    margin-right: 15px;
+  }
+
+  .sign-in-div{
+    justify-content: space-between;
   }
 
 }
