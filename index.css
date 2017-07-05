@@ -43,7 +43,18 @@ a {
 .sub-headings {
         display: block;
         text-indent: none;
-        background-color: #f9fbff;
+        min-width: 160px;
+        vertical-align: top;
+}
+
+.sub-headings span {
+  display: block;
+  line-height: 20px;
+}
+
+.sub-heading-background{
+  background-color: #f9fbff;
+  text-align: center;
 }
 
 #courses{
@@ -142,7 +153,6 @@ a {
         left: 0;
         width: 100%;
         border-top: 1px solid #eeeeef;
-        padding: 40px;
   }
 
   .how-it-works-dropdown{
@@ -153,7 +163,6 @@ a {
         left: 0;
         width: 100%;
         border-top: 1px solid #eeeeef;
-        padding: 40px;
 }
 
     .sub-headings {
